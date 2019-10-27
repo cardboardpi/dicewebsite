@@ -1,0 +1,27 @@
+/*
+*/
+body{
+	font-family: "Roboto Thin", Sans-Serif;
+	background-color: grey;
+}
+
+#container{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 10px;
+}
+
+#dice, #die, #total{
+	/*border: 2px dashed black;*/
+	height: 200px;
+	font-size: 90pt;
+	padding: auto;
+	margin:auto;
+}
+h1, #dice, #die, #total{
+	text-align: center;
+}
+#dice, #die, #total, .text{
+	font-weight: bold;
+}
