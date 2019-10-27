@@ -4,15 +4,15 @@
 	window.onload = function(){
 		let rollButton = document.getElementById("roll");
 		rollButton.onclick = roll;
-		
+
 		let roll2Button = document.getElementById("roll2");
 		roll2Button.onclick = rollMultiple;
-		
+
 		let clearButton = document.getElementById("clear");
 		clearButton.addEventListener("click", function(){
 			removeFrom("dice");
 		});
-		
+
 		let clear2Button = document.getElementById("clear2");
 		clear2Button.addEventListener("click", function(){
 			removeFrom("die");
@@ -29,7 +29,7 @@
 		let min = document.getElementById("min2").value;
 		let max = document.getElementById("max2").value;
 		let sum = 0;
-		
+
 		for (let i = 0; i < amount; i++){
 			if (i === amount - 1){
 				let result = randomRange(min, max)
@@ -41,7 +41,7 @@
 				sum += result;
 				resultString += result.toString() + ", ";
 			}
-		} 
+		}
 		writeTo(resultString, "die");
 		writeTo("Total: " + sum.toString(), "total");
 	}
@@ -53,7 +53,7 @@
 		let max = document.getElementById("max").value;
 		let result = randomRange(min, max);
 		writeTo(result, "dice");
-		
+
 	}
 	/**
 	*/
